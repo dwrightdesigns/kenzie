@@ -8,22 +8,14 @@
   </head>
   <body>
     <header>
-      <div class="navbar">
-        <nav class="navbar__element">
-          <div class="navbar__logo">
-            <img
-              src="https://res-5.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/v1507162903/qkpagi7sv8temclfcfjp.png"
-              alt=""
-            />
-          </div>
-          <ul>
-            <li><a href="#">Admissions</a></li>
-            <li><a href="#">Programs</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li class="navbar--modifier"><a href="#">Schedule a Tour</a></li>
-          </ul>
-        </nav>
-      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#">Admissions</a></li>
+          <li><a href="#">Programs</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li class="navbar--modifier"><a href="#">Schedule a Tour</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
@@ -34,14 +26,14 @@
           program.
         </p>
         <iframe
-          width="560"
-          height="395"
           src="https://www.youtube.com/embed/UBATWULk8CU"
           frameborder="0"
         ></iframe>
       </div>
+
       <section class="quotes">
         <div class="quotes__element">
+          <div class="quote__icon"><img src="img/quote icon.svg" alt="" /></div>
           <q>
             The new Indianapolis-based venture is creating a new type of program
             that combines work and school to teach nontechies...
@@ -49,12 +41,72 @@
           <cite>- John S.</cite>
         </div>
         <div class="quotes__element">
+          <div class="quote__icon"><img src="img/quote icon.svg" alt="" /></div>
           <q>
             ...an educational project aimed at adapting the Agility.io model to
             help get Middle America in on the tech boom.
           </q>
           <cite>- Jane S.</cite>
         </div>
+      </section>
+
+      <section class="options">
+        <div class="options__content">
+          <img src="img/calendar.svg" />
+          <h3>Software Engineering</h3>
+          <button><a href="#">Learn to Code</a></button>
+        </div>
+        <div class="options__content">
+          <img src="img/calendar.svg" />
+          <h3>User Experience</h3>
+          <button><a href="#">Learn to Design</a></button>
+        </div>
+        <div class="options__content">
+          <img src="img/calendar.svg" />
+          <h3>Digital Marketing</h3>
+          <button><a href="#">Learn to Market</a></button>
+        </div>
+      </section>
+
+      <div class="cta">
+        <h2>Not sure which program is right for you?</h2>
+        <button><a href="#">Compare Programs</a></button>
+      </div>
+
+      <div class="about">
+        <h3>Meet Kenzie</h3>
+        <p>
+          We founded Kenzie Academy to tackle a major opportunities gap in
+          America. We discovered that fast-growing technology companies
+          concentrated in expensive coastal cities were struggling to hire tech
+          talent. Meanwhile, a large population of aspiring individuals across
+          the country could help fuel these talent needs. Our mission is to
+          equip this population with the necessary skills, experience, and
+          access in order to build successful careers in tech.
+        </p>
+        <button><a href="#">Read our story →</a></button>
+      </div>
+
+      <section class="signup">
+        <h3>Let's Chat.</h3>
+        <p>
+          Kenzie Academy is no small commitment. If we've piqued your interest
+          today, we'd love to keep the conversation going.
+        </p>
+
+        <form class="signup__form">
+          <div class="signup--name">
+            <input placeholder="First Name" />
+            <input placeholder="Last Name" />
+          </div>
+          <div class="signup--info">
+            <input placeholder="Email" />
+            <input placeholder="Phone" />
+          </div>
+          <div class="signup__button">
+            <input type="submit" />
+          </div>
+        </form>
       </section>
     </main>
   </body>

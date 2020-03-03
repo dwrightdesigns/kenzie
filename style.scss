@@ -1,4 +1,5 @@
 /* Base Styles (overall website styles) */
+
 html,
 body {
   margin: 0;
@@ -7,7 +8,8 @@ body {
 
 body {
   font-size: 1rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 body * {
@@ -60,17 +62,22 @@ img {
 }
 
 /* Layout Styles (manipulating content layout) */
+
 /* Block Styles */
-.navbar ul {
-  display: flex;
-  flex-direction: column;
-  padding-left: 0;
-  list-style-type: none;
-  margin: 1em;
-  text-align: center;
-}
-.navbar li {
-  padding: 0.3em;
+
+.navbar {
+  ul {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    list-style-type: none;
+    margin: 1em;
+    text-align: center;
+  }
+
+  li {
+    padding: 0.3em;
+  }
 }
 
 .navbar--modifier {
@@ -85,21 +92,24 @@ img {
   flex-direction: column;
   justify-content: center;
   width: 100%;
-}
-.hero h1 {
-  text-align: center;
-  color: var(--kenziemain);
-  font-size: 3rem;
-}
-.hero p {
-  text-align: center;
-  margin-bottom: 1em;
-}
-.hero iframe {
-  width: 100%;
-  height: 200px;
-  margin-bottom: 1em;
-  padding: 1em;
+
+  h1 {
+    text-align: center;
+    color: var(--kenziemain);
+    font-size: 3rem;
+  }
+
+  p {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+
+  iframe {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 1em;
+    padding: 1em;
+  }
 }
 
 .quotes {
@@ -128,13 +138,15 @@ img {
   flex-direction: column;
   justify-content: center;
   padding: 2em;
-}
-.options h3 {
-  padding: 0.5em;
-  color: var(--kenziecomp);
-}
-.options img {
-  width: 50px;
+
+  h3 {
+    padding: 0.5em;
+    color: var(--kenziecomp);
+  }
+
+  img {
+    width: 50px;
+  }
 }
 
 .options__content {
@@ -142,49 +154,55 @@ img {
   padding-bottom: 2em;
   width: 10em;
   margin: 0 auto;
-}
-.options__content button {
-  border-radius: 0.2em;
-  background-color: transparent;
-  border: 0.2em solid var(--kenziemain);
-  color: var(--kenziemain);
-  width: 10em;
-  height: 3em;
-  font-size: 1rem;
-}
-.options__content button:hover {
-  opacity: 0.7;
+
+  button {
+    border-radius: 0.2em;
+    background-color: transparent;
+    border: 0.2em solid var(--kenziemain);
+    color: var(--kenziemain);
+    width: 10em;
+    height: 3em;
+    font-size: 1rem;
+  }
+
+  button:hover {
+    opacity: 0.7;
+  }
 }
 
 .cta {
   background-color: lightgray;
   text-align: center;
   padding: 1em;
-}
-.cta h2 {
-  font-weight: 300;
-}
-.cta button {
-  background-color: var(--kenziemain);
-  color: var(--kenzielight);
-  padding: 1em;
-  font-size: 1rem;
+
+  h2 {
+    font-weight: 300;
+  }
+
+  button {
+    background-color: var(--kenziemain);
+    color: var(--kenzielight);
+    padding: 1em;
+    font-size: 1rem;
+  }
 }
 
 .about {
   text-align: center;
   padding: 1em;
-}
-.about h3 {
-  font-size: 2em;
-  color: var(--kenziecomp);
-}
-.about button {
-  color: var(--kenziemain);
-  padding: 1em;
-  font-size: 1rem;
-  background-color: transparent;
-  border: none;
+
+  h3 {
+    font-size: 2em;
+    color: var(--kenziecomp);
+  }
+
+  button {
+    color: var(--kenziemain);
+    padding: 1em;
+    font-size: 1rem;
+    background-color: transparent;
+    border: none;
+  }
 }
 
 .signup {
@@ -195,10 +213,11 @@ img {
   margin-top: 1em;
   border-top: 0.1em solid lightgray;
   margin: 1em;
-}
-.signup h3 {
-  font-size: 2em;
-  color: var(--kenziecomp);
+
+  h3 {
+    font-size: 2em;
+    color: var(--kenziecomp);
+  }
 }
 
 .signup__form {
@@ -216,9 +235,11 @@ img {
   padding: 1em;
 }
 
-.signup__button input {
-  border: 0.2em solid var(--kenziemain);
-  background-color: transparent;
+.signup__button {
+  input {
+    border: 0.2em solid var(--kenziemain);
+    background-color: transparent;
+  }
 }
 
 @media screen and (min-width: 562px) {
@@ -230,29 +251,35 @@ img {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-  }
-  .signup--info input {
-    width: 41.3em;
+
+    input {
+      width: 41.3em;
+    }
   }
 
-  .navbar ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-  }
-  .navbar li {
-    padding: 1em;
+  .navbar {
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+
+    li {
+      padding: 1em;
+    }
   }
 
   .navbar--modifier {
     margin: 0;
   }
 
-  .hero iframe {
-    height: 315px;
-    width: 50%;
-    padding: 1em;
-    margin: 0 auto;
+  .hero {
+    iframe {
+      height: 315px;
+      width: 50%;
+      padding: 1em;
+      margin: 0 auto;
+    }
   }
 }
 @media screen and (min-width: 650px) {
@@ -276,15 +303,17 @@ img {
   .options__content {
     padding: 2em;
     width: 13em;
-  }
-  .options__content button {
-    width: 100%;
-  }
-}
-@media screen and (min-width: 1065px) {
-  .hero iframe {
-    height: 415px;
+
+    button {
+      width: 100%;
+    }
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+@media screen and (min-width: 1065px) {
+  .hero {
+    iframe {
+      height: 415px;
+    }
+  }
+}
