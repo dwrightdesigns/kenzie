@@ -59,6 +59,8 @@ img {
   --kenziemain: rgba(2, 53, 108, 1);
   --kenziecomp: rgba(48, 51, 75, 1);
   --kenzielight: rgba(255, 255, 255, 1);
+  --container-bg: rgba(220, 220, 220, 1);
+  --border: 0.1em solid lightgray;
 }
 
 /* Layout Styles (manipulating content layout) */
@@ -116,8 +118,8 @@ img {
   display: flex;
   flex-direction: column;
   padding: 1em;
-  border-top: 0.1em solid lightgray;
-  border-bottom: 0.1em solid lightgray;
+  border-top: var(--border);
+  border-bottom: var(--border);
   margin: 1em;
 }
 
@@ -127,7 +129,6 @@ img {
 }
 
 .quote__icon {
-  background-color: white;
   width: 3em;
   margin: 0 auto;
   padding-bottom: 0.3em;
@@ -171,7 +172,7 @@ img {
 }
 
 .cta {
-  background-color: lightgray;
+  background-color: var(--container-bg);
   text-align: center;
   padding: 5em;
 
@@ -247,7 +248,7 @@ img {
     justify-self: center;
   }
 
-  .students__content{
+  .students__content {
     padding-top: 1em;
   }
 }
@@ -258,7 +259,7 @@ img {
   text-align: center;
   padding: 1em;
   margin-top: 1em;
-  border-top: 0.1em solid lightgray;
+  border-top: var(--border);
   margin: 1em;
 
   h3 {
@@ -274,7 +275,7 @@ img {
 }
 
 .signup input {
-  border: 2px solid lightgray;
+  border: var(--border);
   border-radius: 0.2em;
   margin: 0.5em;
   width: 20em;
@@ -365,11 +366,11 @@ img {
     }
   }
 
-  .students{
+  .students {
     display: flex;
-    justify-content: center;;
+    justify-content: center;
 
-    .students__content{
+    .students__content {
       padding-left: 2em;
       width: 24em;
       text-align: justify;
