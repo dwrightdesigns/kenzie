@@ -68,6 +68,9 @@ img {
 /* Block Styles */
 
 .navbar {
+  display: flex;
+  justify-content: center;
+
   ul {
     display: flex;
     flex-direction: column;
@@ -77,40 +80,67 @@ img {
     text-align: center;
   }
 
+  img {
+    display: none;
+  }
+
   li {
+    color: var(--kenziemain);
     padding: 0.3em;
+
+    :hover {
+      opacity: 0.8;
+    }
   }
 }
 
 .navbar--modifier {
-  color: var(--kenzielight);
+  color: var(--kenzielight) !important;
   background-color: var(--kenziemain);
   width: 10em;
   margin: 0 auto;
 }
 
 .hero {
+  background: rgba(0, 0, 0, 1);
+  position: relative;
+  height: 50vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 
   h1 {
     text-align: center;
-    color: var(--kenziemain);
+    color: var(--kenzielight);
     font-size: 3rem;
+    z-index: 999;
+    padding: 20px;
+    margin: 15px;
+    font-weight: 300;
   }
 
   p {
+    color: var(--kenzielight);
+    z-index: 999;
     text-align: center;
     margin-bottom: 1em;
   }
 
-  iframe {
+  .video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 200px;
-    margin-bottom: 1em;
-    padding: 1em;
+    height: 50vh;
+
+    video {
+      object-fit: cover;
+      height: 50vh;
+      width: 100%;
+      opacity: 0.6;
+    }
   }
 }
 
@@ -120,12 +150,12 @@ img {
   padding: 1em;
   border-top: var(--border);
   border-bottom: var(--border);
-  margin: 1em;
+  margin: 1rem;
 }
 
 .quotes__element {
-  padding: 0.5em;
-  margin: 0.5em;
+  padding: 1rem;
+  margin: 1rem;
 }
 
 .quote__icon {
@@ -172,9 +202,13 @@ img {
 }
 
 .cta {
-  background-color: var(--container-bg);
+  background: url(img/helloquence-5fNmWej4tAA-unsplash.jpg);
+  background-position: 0 -30rem;
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
   padding: 5em;
+  color: var(--kenzielight);
 
   h2 {
     font-weight: 300;
@@ -183,8 +217,14 @@ img {
   button {
     background-color: var(--kenziemain);
     color: var(--kenzielight);
-    padding: 1em;
+    border: none;
+    padding: 1rem;
     font-size: 1rem;
+
+    :hover {
+      padding: 1rem;
+      background-color: rgba(2, 53, 108, 1);
+    }
   }
 }
 
@@ -218,7 +258,10 @@ img {
   flex-wrap: wrap;
 
   img {
-    width: 3em;
+    border-radius: 100%;
+    object-fit: cover;
+    width: 4rem;
+    height: 4rem;
     margin: 0.3em;
   }
 }
@@ -229,8 +272,11 @@ img {
   flex-wrap: wrap;
 
   img {
-    width: 3em;
-    margin: 0.3em;
+    border-radius: 100%;
+    object-fit: cover;
+    width: 4rem;
+    height: 4rem;
+    margin: 0.3rem;
   }
 }
 
@@ -254,17 +300,21 @@ img {
 }
 
 .signup {
+  background-color: var(--kenziemain);
   display: flex;
   flex-direction: column;
   text-align: center;
   padding: 1em;
   margin-top: 1em;
   border-top: var(--border);
-  margin: 1em;
 
   h3 {
     font-size: 2em;
-    color: var(--kenziecomp);
+    color: var(--kenzielight);
+  }
+
+  p{
+    color: var(--kenzielight);
   }
 }
 
@@ -285,8 +335,8 @@ img {
 
 .signup__button {
   input {
-    border: 0.2em solid var(--kenziemain);
-    background-color: transparent;
+    background-color: var(--kenzielight);
+    cursor: pointer;
   }
 }
 
@@ -306,6 +356,12 @@ img {
   }
 
   .navbar {
+    justify-content: space-between;
+
+    img {
+      display: flex;
+      width: 80px;
+    }
     ul {
       display: flex;
       flex-direction: row;
@@ -343,26 +399,28 @@ img {
   .quotes {
     display: flex;
     flex-direction: row;
-    margin: 1em;
+    margin: 4rem;
   }
 
   .quotes__element {
-    width: 50em;
+    width: 40em;
     margin: 0 auto;
   }
 
   .options {
+    margin-left: 10%;
+    margin-right: 10%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
 
   .options__content {
     padding: 2em;
-    width: 13em;
+    width: 100%;
 
     button {
-      width: 100%;
+      width: 150px;
     }
   }
 
